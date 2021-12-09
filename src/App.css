@@ -1,0 +1,84 @@
+html, body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {   
+    margin:10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.input{
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    background-color: blanchedalmond;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.city-card {
+    display: flex;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: blanchedalmond;
+    box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e2432;
+    text-align: center;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+}
+
+.city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .city {
+        padding: 40px 20%;
+    }
+}
