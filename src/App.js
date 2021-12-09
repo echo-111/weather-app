@@ -5,7 +5,7 @@ import CityCard from './component/cityCard';
 
 function App() {
 
-    const apiKey="3feabe70201b94ea2a632771ec7cf094";
+    const apiKey="";
     const [weatherData, setWeatherData]= useState([{}]);
     const [city, setCity]= useState("");
 
