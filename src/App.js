@@ -3,15 +3,15 @@ import Input from './component/input';
 import './App.css';
 import CityCard from './component/cityCard';
 
-function App() {
+const KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
-    const apiKey = process.env.WEATHER_API_KEY;
+function App() {
     const [weatherData, setWeatherData]= useState([{}]);
     const [city, setCity]= useState("");
 
     const getWeather = (e) => {
         if(e.key==="Enter") {
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`).then(
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${KEY}`).then(
                 response => response.json()
             ).then(
                 data => (
